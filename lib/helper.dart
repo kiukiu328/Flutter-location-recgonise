@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dart_openai/openai.dart';
+import 'package:dart_openai/dart_openai.dart';
 
 class HelperChatPage extends StatefulWidget {
   const HelperChatPage({super.key});
@@ -26,7 +26,8 @@ class _HelperChatPageState extends State<HelperChatPage> {
       _chatBoxes.add(UserChatBox(text: text));
     });
     conversation.add(OpenAIChatCompletionChoiceMessageModel(
-        content: text, role: OpenAIChatMessageRole.user));
+        content: [OpenAIChatCompletionChoiceMessageContentItemModel.text(text)],
+        role: OpenAIChatMessageRole.user));
     setState(() {
       _chatBoxes.add(AIChatBox(text: text));
     });
@@ -65,7 +66,7 @@ class _HelperChatPageState extends State<HelperChatPage> {
         children: [
           Expanded(
             child: ListView.builder(
-              padding:const EdgeInsets.all(16),
+              padding: const EdgeInsets.all(16),
               itemCount: _chatBoxes.length,
               itemBuilder: (BuildContext context, int index) {
                 return _chatBoxes[index];
@@ -119,8 +120,8 @@ class _ChatBoxState extends State<ChatBox> {
   Widget build(BuildContext context) {
     if (widget is AIChatBox) {
       return FutureBuilder<OpenAIChatCompletionModel>(
-        future: OpenAI.instance.chat.create(
-          model: "gpt-3.5-turbo",
+        future: AzureOpenAI.instance.chat.create(
+          model: "gpt-4o-mini",
           messages: ChatBox.conversation,
         ),
         builder: (BuildContext context,
@@ -128,7 +129,9 @@ class _ChatBoxState extends State<ChatBox> {
           Widget child;
           String text = "";
           if (snapshot.hasData) {
-            text = snapshot.data!.choices.last.message.content;
+            // text = snapshot.data!.choices.last.message.content;
+            text = snapshot.data!.choices.last.message.content!.first.text!;
+
             child = Container(
               margin: const EdgeInsets.all(10),
               child: Text(
@@ -147,7 +150,8 @@ class _ChatBoxState extends State<ChatBox> {
             );
           } else {
             child = Container(
-                margin: EdgeInsets.all(20), child: CircularProgressIndicator());
+                margin: const EdgeInsets.all(20),
+                child: const CircularProgressIndicator());
           }
           return Container(
             width: double.infinity,

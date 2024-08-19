@@ -3,7 +3,7 @@ import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:permission_handler/permission_handler.dart';
 
 class MapScreen extends StatefulWidget {
-  MapScreen(
+  const MapScreen(
       {super.key, this.title = "Map", required this.lat, required this.long, required this.name});
   final double lat;
   final double long;
@@ -39,7 +39,7 @@ class _MapScreenState extends State<MapScreen> {
       appBar: AppBar(),
       body: Column(
         children: <Widget>[
-          Container(
+          SizedBox(
             height: size.height * 0.85,
             child: GoogleMap(
               myLocationEnabled: false,

@@ -7,7 +7,7 @@ environment:
   sdk: '>=2.19.6 <3.0.0'
 
 dependencies:
-  dart_openai: ^1.9.1
+  # dart_openai: ^5.1.0
   flutter:
     sdk: flutter
   flutter_svg: ^2.0.5
@@ -17,6 +17,13 @@ dependencies:
   permission_handler: ^10.2.0
   pytorch_mobile: ^0.2.2
   webview_flutter: ^4.2.0
+  dart_openai:
+    git:
+      url: https://github.com/anasfik/openai
+      ref: azure
+  flutter_dotenv: ^5.1.0
+
+  
 
 
 
@@ -32,3 +39,4 @@ flutter:
     - assets/models/
     - assets/labels/
     - assets/data/
+    - .env

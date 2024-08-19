@@ -84,11 +84,12 @@ packages:
   dart_openai:
     dependency: "direct main"
     description:
-      name: dart_openai
-      sha256: "688f17bdc165908f533b07438f2b01d02dd5afd326d4c01439f52aa9d4ab343c"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.9.93"
+      path: "."
+      ref: azure
+      resolved-ref: "377e9765a25599dd3d040f44dac3a64fd028ca1f"
+      url: "https://github.com/anasfik/openai"
+    source: git
+    version: "5.0.0"
   fake_async:
     dependency: transitive
     description:
@@ -158,6 +159,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_dotenv:
+    dependency: "direct main"
+    description:
+      name: flutter_dotenv
+      sha256: "9357883bdd153ab78cbf9ffa07656e336b8bbb2b5a3ca596b0b27e119f7c7d77"
+      url: "https://pub.dev"
+    source: hosted
+    version: "5.1.0"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -252,10 +261,10 @@ packages:
     dependency: transitive
     description:
       name: http
-      sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
+      sha256: b9c29a161230ee03d3ccf545097fccd9b87a5264228c5d348202e0f0c28f9010
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.6"
+    version: "1.2.2"
   http_parser:
     dependency: transitive
     description:

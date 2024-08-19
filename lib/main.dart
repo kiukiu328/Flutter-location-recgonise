@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:dart_openai/openai.dart';
-import 'second_page.dart';
 import 'home_page.dart';
-import 'image_recognize.dart';
+import 'package:dart_openai/dart_openai.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
-  // OpenAI.apiKey = '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';
+void main() async {
+  await dotenv.load();
+  AzureOpenAI.apiKey = dotenv.env['OPEN_AI_API_KEY']!;
+  AzureOpenAI.baseUrl = 'https://hkust.azure-api.net';
+  AzureOpenAI.apiVersion = '2024-06-01';
 
   runApp(const MyApp());
 }
