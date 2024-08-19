@@ -1,0 +1,51 @@
+{
+    "ChristTheRedeemer": {
+        "id": "ChristTheRedeemer",
+        "latitude": -22.9519,
+        "longitude": -43.2105,
+        "country": "Brazil",
+        "name": "Christ the Redeemer - Rio de Janeiro, Brazil",
+        "description": "Christ the Redeemer - located in Rio de Janeiro, Brazil, it is a statue of Jesus Christ that stands at 30 meters (98 feet) tall, with its arms outstretched over the city. It was completed in 1931 and is considered one of the largest Art Deco statues in the world."
+    },
+    "Colosseum": {
+        "id": "Colosseum",
+
+        "latitude": 41.8902,
+        "longitude": 12.4922,
+        "country": "Italy",
+        "name": "The Colosseum - Rome, Italy",
+        "description": "The Colosseum - located in Rome, Italy, it is an oval amphitheater that was built in 70-80 AD. It was used for gladiatorial contests and public spectacles, and is considered one of the greatest feats of Roman engineering. Today, it is a major tourist attraction and a popular symbol of ancient Rome."
+    },
+    "EiffelTower": {
+        "id": "EiffelTower",
+        "latitude": 48.8584,
+        "longitude": 2.2945,
+        "country": "France",
+        "name": "Eiffel Tower - Paris, France",
+        "description": "Eiffel Tower - located in Paris, France, it is an iconic symbol of the city and one of the most recognizable landmarks in the world. It was built in 1889 and stands at 324 meters (1,063 feet) tall, making it one of the tallest structures in Paris."
+    },
+    "GreatWallofChina": {
+        "id": "GreatWallofChina",
+        "latitude": 40.4319,
+        "longitude": 116.5704,
+        "country": "China",
+        "name": "Great Wall of China - China",
+        "description": "Great Wall of China - located in China, it is a series of fortifications that were built over thousands of years to protect China from invaders. The wall stretches over 21,000 kilometers (13,000 miles) and is one of the largest structures ever built by humans."
+    },
+    "StatueofLiberty": {
+        "id": "StatueofLiberty",
+        "latitude": 40.6892,
+        "longitude": 74.0445,
+        "country": "UnitedStates",
+        "name": "Statue of Liberty - New York City, United States",
+        "description": "Statue of Liberty - located in New York City, United States, it is a copper statue of a robed woman holding a torch, which was a gift from France to the United States in 1886. The statue represents freedom and democracy, and has become a symbol of the United States and its ideals."
+    },
+    "TajMahal": {
+        "id": "TajMahal",
+        "latitude": 27.1750,
+        "longitude": 78.0422,
+        "country": "India",
+        "name": "Taj Mahal - Agra, India",
+        "description": "Taj Mahal - located in Agra, India, it is a white marble mausoleum built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal. It was completed in 1653 and is considered one of the most beautiful buildings in the world, with intricate carvings and a stunning symmetrical design."
+    }
+}

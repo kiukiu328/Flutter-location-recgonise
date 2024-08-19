@@ -1,0 +1,34 @@
+name: location_recgonise
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=2.19.6 <3.0.0'
+
+dependencies:
+  dart_openai: ^1.9.1
+  flutter:
+    sdk: flutter
+  flutter_svg: ^2.0.5
+  google_maps_flutter: ^2.2.5
+  image: ^3.0.2
+  image_picker: ^0.8.7+3
+  permission_handler: ^10.2.0
+  pytorch_mobile: ^0.2.2
+  webview_flutter: ^4.2.0
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/models/
+    - assets/labels/
+    - assets/data/
