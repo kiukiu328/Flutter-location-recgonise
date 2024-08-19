@@ -13,7 +13,12 @@ OPEN_AI_API_KEY=<YOUR_API_KEY>
 5. Run `flutter run`
 6. Enjoy!
 
-### Only Android(Tested)
-### Windows doesn't support
-### iOS not tested
+### Demo
+https://github.com/user-attachments/assets/08bd85cc-9a5d-4709-a6ca-1b158207a93d
+
+
+### Tested
+- Only Android(Tested)
+- Windows doesn't support
+- iOS not tested
 
